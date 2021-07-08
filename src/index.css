@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.accordion{
+  color:gray;
+  background-color: rgb(27, 29, 41) !important;
+}
+
+.card-body{
+  background-color: rgb(53, 96, 134);
+}
+
+

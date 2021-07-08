@@ -52,8 +52,8 @@ export const Create = ({ history }) => {
 
   const handleOnSubmit = (data) => {
     let newData = Object.assign(data, { addresses: dataAddressess });
-    console.log({ ...newData, gender: parseInt(newData.gender) });
-    console.log(newData);
+    // console.log({ ...newData, gender: parseInt(newData.gender) });
+    // console.log(newData);
 
     axiosInstance
       .post("/customers", { ...newData, gender: parseInt(newData.gender) })
@@ -68,7 +68,7 @@ export const Create = ({ history }) => {
     setDataAddressess([...dataAddressess, dataAddresses]);
   };
 
-  console.log(dataAddressess);
+  // console.log(dataAddressess);
 
   return (
     <>
@@ -209,13 +209,13 @@ export const Create = ({ history }) => {
                 </Form.Control>
               </Form.Group>
 
-              <Button
+              <button
                 size="sm"
                 onClick={handleAddNewAddress}
                 className="btn btn-outline-warning btn-sm"
               >
                 Add New Address
-              </Button>
+              </button>
             </Form.Row>
 
             {dataAddressess[0] && (

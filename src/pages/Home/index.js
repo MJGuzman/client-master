@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Col, Row } from "react-bootstrap";
-import { TableCustomer } from "../../components/Table";
+import { TableCustomer } from "../../Components/Table";
 import { urls } from "../../constants/urls";
 import axiosInstance from "../../helpers/axiosInstance";
 
